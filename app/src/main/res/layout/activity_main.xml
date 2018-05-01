@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="322dp"
+        android:layout_height="204dp"
+        android:text="QUOTE:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motivation"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/happy"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginRight="123dp"
+        android:layout_marginStart="101dp"
+        android:text="HAPPY"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/sad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/sad"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:text="SAD"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/motivation"
+        app:layout_constraintTop_toBottomOf="@+id/happy"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/motivation"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:text="Motivation"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/quote"
+        app:layout_constraintTop_toBottomOf="@+id/sad"
+        tools:layout_editor_absoluteX="1dp" />
+
+</android.support.constraint.ConstraintLayout>
